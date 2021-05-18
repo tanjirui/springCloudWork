@@ -17,4 +17,6 @@ public class EurekaRegistryTest {
         return "Hello, Hello";
     }
 
+
+
 }
