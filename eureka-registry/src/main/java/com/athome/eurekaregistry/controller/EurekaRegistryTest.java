@@ -16,4 +16,7 @@ public class EurekaRegistryTest {
     public String welCome() {
         return "Hello, Hello";
     }
+
+
+
 }
