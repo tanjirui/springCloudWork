@@ -17,6 +17,8 @@ public class EurekaClientRest {
 
     @Autowired
     private IpInfoService ipInfoService;
+	
+    private String name;
 
     @RequestMapping(value = "/test", method = { RequestMethod.GET })
     public String test() {
