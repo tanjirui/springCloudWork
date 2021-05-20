@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EurekaClientRest {
 
     @Autowired
-    IpInfoService ipInfoService;
+    private IpInfoService ipInfoService;
 
     @RequestMapping(value = "/test", method = { RequestMethod.GET })
     public String test() {
@@ -26,5 +26,7 @@ public class EurekaClientRest {
     @RequestMapping(value = "/ip", method = { RequestMethod.GET })
     public ResultModel ip() {
         return ipInfoService.getIpInfo();
+        
     }
+    
 }
